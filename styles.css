@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+header {
+  background-color: white;
+  padding: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header h1 {
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+}
+.reset {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 100px;
+  height: 50px;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background: linear-gradient(grey, white);
+  border-radius: 20px;
+}
+.score-board {
+  margin: 20px auto;
+  border: 4px solid white;
+  width: 200px;
+  height: 100px;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 5px;
+  font-weight: 600;
+  font-size: 4rem;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.badge {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: red;
+  padding: 4px;
+}
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -25px;
+}
+.result {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10rem;
+}
+@media screen and (max-width: 800px) {
+  .choices {
+    display: grid;
+    place-items: center;
+    font-size: 6rem;
+  }
+  .reset {
+    position: sticky;
+    bottom: 20px;
+    left: 20px; 
+  }
+}
+.choice {
+  margin: 20px;
+  padding: 30px;
+  border: 3px solid white;
+  border-radius: 30%;
+  transition: all .1s linear;
+}
+.choice:hover {
+  background-color: white;
+  color: black;
+}
+.choice:active {
+  scale: 0.9;
+}
