@@ -1,6 +1,3 @@
-// const rock = document.getElementById("r");
-// const paper = document.getElementById("p");
-// const scissors = document.getElementById("s");
 const computer_badge = document.getElementById("computer-score");
 const human_badge = document.getElementById("user-score");
 const score_board = document.querySelector(".score-board");
@@ -9,6 +6,7 @@ const reset = document.querySelector(".reset")
 let computer_score = 0
 let human_score = 0
 
+//we have defined some variables above
 const choices = document.querySelectorAll(".choice")
 const sign = ["r", "p", "s"];
 choices.forEach( choice => {
